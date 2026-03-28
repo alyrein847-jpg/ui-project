@@ -116,6 +116,23 @@ nav h1 {
   left: 10px;
 }
 
+.coming-soon-card {
+  opacity: 0.85;
+}
+
+.coming-soon-card::after {
+  content: "COMING SOON";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(229, 9, 20, 0.9);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
 /* MODAL */
 .modal {
   display: none;
