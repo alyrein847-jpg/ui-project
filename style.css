@@ -26,16 +26,47 @@ nav h1 {
 }
 
 /* HERO */
+/* HERO */
 .hero {
-  height: 100vh;
-  background: url('images/bg.jpg') center/cover;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 50px;
+  justify-content: center;
+  gap: 80px;
+  padding: 100px 60px 50px;
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('images/bg.jpg') center/cover no-repeat;
+  flex-wrap: wrap;
 }
 
-.hero h2 {
+.hero-video {
+  flex: 1;
+  max-width: 520px;
+}
+
+.side-video {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 420px;
+}
+
+.hero-content h2 {
   font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ddd;
 }
 
 .btn {
