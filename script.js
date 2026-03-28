@@ -4,14 +4,26 @@ function scrollToSection() {
   });
 }
 
-function openModal(title, text) {
-  document.getElementById("modal").style.display = "flex";
+function openModal(title, text, videoSrc) {
+  const modal = document.getElementById("modal");
+  const modalVideo = document.getElementById("modal-video");
+  const modalVideoSource = document.getElementById("modal-video-source");
+
+  modal.style.display = "flex";
   document.getElementById("modal-title").innerText = title;
   document.getElementById("modal-text").innerText = text;
+
+  modalVideoSource.src = videoSrc;
+  modalVideo.load();
 }
 
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  const modal = document.getElementById("modal");
+  const modalVideo = document.getElementById("modal-video");
+
+  modal.style.display = "none";
+  modalVideo.pause();
+  modalVideo.currentTime = 0;
 }
 
 let music = document.getElementById("music");

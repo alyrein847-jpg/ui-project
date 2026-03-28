@@ -32,37 +32,40 @@
 <section class="section" id="gallery">
   <h2>Our Memories</h2>
 
-  <div class="cards">
-    <div class="card" onclick="openModal('First Chat', 'Awal kita kenal... ❤️')">
-      <img src="images/foto121.jpg">
-      <div class="card-title">First Chat</div>
-    </div>
+<div class="card" onclick="openModal('First Date', '11 maret 2026, kita jalan ke siring di bjm yey, bareng sama temen temen dikanaelin jugaa ❤️', 'videos/chat.mp4')">
+  <img src="images/foto121.jpg">
+  <div class="card-title">First Date</div>
+</div>
 
-    <div class="card" onclick="openModal('First Date', 'Hari pertama kita jalan bareng 🥹')">
-      <img src="images/foto2.jpg">
-      <div class="card-title">First Date</div>
-    </div>
+<div class="card" onclick="openModal('Kencan Kedua', '14 Maret 2026, kita main ps bareng. sklian adopt anak baru yg dikasi nama Dika Junior🥹', 'videos/date.mp4')">
+  <img src="images/foto2.jpg">
+  <div class="card-title">2nd Date?</div>
+</div>
 
-    <div class="card" onclick="openModal('Favorite Moment', 'Moment paling aku suka ❤️')">
-      <img src="images/foto3.jpg">
-      <div class="card-title">Favorite</div>
-    </div>
+<div class="card" onclick="openModal('when yh', 'ini klo ngedate lgi ditambahin yah', 'videos/favorite.mp4')">
+  <img src="images/foto3.jpg">
+  <div class="card-title">coming soon...</div>
+</div>
   </div>
 </section>
 
 <section class="section">
-  <h2>For You 💌</h2>
-  <div class="love-letter">
+  <h2>For us 💌</h2>
+  <div class="pesan buat kita">
     <p>
-      Aku mungkin bukan yang sempurna, tapi aku selalu berusaha jadi yang terbaik buat kamu.
-      Terima kasih sudah hadir di hidupku ❤️
+      ahh ini biar dika aj yg isi, bikinkan kata" yg bgus yh. elin gk ad ide:v
     </p>
   </div>
 </section>
 
 <div class="modal" id="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal()">X</span>
+    <span class="close" onclick="closeModal()">✖</span>
+
+    <video id="modal-video" controls class="modal-video">
+      <source id="modal-video-source" src="" type="video/mp4">
+    </video>
+
     <h2 id="modal-title"></h2>
     <p id="modal-text"></p>
   </div>
